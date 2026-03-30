@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  app1:
+    build: ./app1
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./app1:/app1
+  app2:
+    build: ./app2
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./app2:/app2
